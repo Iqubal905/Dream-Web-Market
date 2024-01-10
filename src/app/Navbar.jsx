@@ -16,14 +16,7 @@ const navlink = [
         path: '/profile', 
         title:'Profile'
     },
-    {
-        path: '/blogs2', 
-        title:'Blogs'
-    },
-    {
-        path: '/dashboard', 
-        title:'Dashboard'
-    },
+   
     
 ]
 
