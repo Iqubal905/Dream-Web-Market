@@ -1,9 +1,13 @@
-import React from 'react';
+import React from "react";
+import Issues from "./Issues";
+import Welcome from "./Welcome";
+import Reviews from "./Reviews";
 
 const HomePage = () => {
   return (
     <div>
-      <h2>home page</h2>
+      <Welcome></Welcome>
+      <Reviews></Reviews>
     </div>
   );
 };
