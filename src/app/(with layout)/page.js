@@ -1,5 +1,4 @@
 import React from "react";
-import Issues from "./Issues";
 import Welcome from "./Welcome";
 import Reviews from "./Reviews";
 
