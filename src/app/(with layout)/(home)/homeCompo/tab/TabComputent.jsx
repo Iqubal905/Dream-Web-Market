@@ -21,10 +21,10 @@ const TabComponent = () => {
 <div className=' pb-1'>
   
 <div className={activeTab === 0 ? 'block' : 'hidden'}>
-         <h2 className='  py-1 text-center  text-teal-600 font-semibold'> <span className=''>Price: Tk</span> {tabs[0].price}</h2>
+         <h2 className='  py-1 text-center  text-red-600 font-semibold'> <span className=''>Price: Tk</span> {tabs[0].price}</h2>
         </div>
         <div className={activeTab === 1 ? 'block' : 'hidden'}>
-        <h2 className='  py-1 text-center  text-orange-500 font-semibold'> <span className=''>Price: Tk</span> {tabs[1].price}</h2>
+        <h2 className='  py-1 text-center  text-teal-600 font-semibold'> <span className=''>Price: Tk</span> {tabs[1].price}</h2>
         </div>
         <div className={activeTab === 2 ? 'block' : 'hidden'}>
         <h2 className='  py-1 text-center   text-sky-800 font-semibold'> <span className=''>Price: Tk</span> {tabs[2].price}</h2>
@@ -33,7 +33,7 @@ const TabComponent = () => {
       <div className="flex justify-center  text-base space-x-1 md:space-x-2 md:py-2 md:border-2 ">
         <button
           className={`${
-            activeTab === 0 ? ' bg-teal-600 text-white font-semibold ' : 'bg-gray-200 hover:bg-teal-500 text-black font-semibold '
+            activeTab === 0 ? ' bg-red-600 text-white font-semibold ' : 'bg-gray-200 hover:bg-red-500 text-black font-semibold '
           } px-4 py-2 rounded focus:outline-none`}
           onClick={() => handleTabClick(0)}
         >
@@ -41,7 +41,7 @@ const TabComponent = () => {
         </button>
         <button
           className={`${
-            activeTab === 1 ? '  bg-orange-600 text-white font-semibold ' : 'bg-gray-200 hover:bg-orange-500  text-black font-semibold '
+            activeTab === 1 ? '  bg-teal-600 text-white font-semibold ' : 'bg-gray-200 hover:bg-teal-500  text-black font-semibold '
           } px-4 py-2 rounded focus:outline-none`}
           onClick={() => handleTabClick(1)}
         >

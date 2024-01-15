@@ -1,5 +1,6 @@
 // ProjectCard.js
 
+import Image from 'next/image';
 import React from 'react';
 
 const ProjectCard = ({ name, link, img }) => {
@@ -22,6 +23,14 @@ const ProjectCard = ({ name, link, img }) => {
          </div>
 
      <div className='relative'>
+     {/* <Image
+             src={img}
+              alt="Vercel Logo"
+              className="w-full h-auto object-cover" 
+              width={100}
+              height={100}
+              priority
+            /> */}
      <img src={img} alt={name} className="w-full h-auto object-cover" />
       <div className="absolute inset-0   flex items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-50">
         <div className="text-white text-center">
