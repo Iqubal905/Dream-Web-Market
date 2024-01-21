@@ -1,12 +1,13 @@
 // ProjectCard.js
 
+import Image from 'next/image';
 import React from 'react';
 
 const ProjectCard = ({ name, link, img }) => {
   return (
    <>
    <a href="">
-   <div className="relative max-w-sm rounded  border  border-slate-100 shadow-lg mx-4 my-8 overflow-hidden group">
+   <div className="relative max-w-sm rounded  border  border-slate-100 shadow-lg mx-4 my-6 overflow-hidden group">
 
         <div className=' flex  justify-between border-b-2 py-1 border-slate-300 px-2 '>
         <h2 className=" font-semibold text-lg">{name}</h2>
@@ -22,7 +23,15 @@ const ProjectCard = ({ name, link, img }) => {
          </div>
 
      <div className='relative'>
-     <img src={img} alt={name} className="w-full h-64 object-cover" />
+     {/* <Image
+             src={img}
+              alt="Vercel Logo"
+              className="w-full h-auto object-cover" 
+              width={100}
+              height={100}
+              priority
+            /> */}
+     <img src={img} alt={name} className="w-full h-auto object-cover" />
       <div className="absolute inset-0   flex items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-50">
         <div className="text-white text-center">
           <h2>project name</h2>

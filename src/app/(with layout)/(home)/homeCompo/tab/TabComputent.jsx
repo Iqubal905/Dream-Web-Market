@@ -16,24 +16,24 @@ const TabComponent = () => {
   };
 
   return (
-    <div className=' mx-2 md:mx-20 text-center'>
+    <div className=' mx-2 md:mx-8 text-center'>
 
 <div className=' pb-1'>
   
 <div className={activeTab === 0 ? 'block' : 'hidden'}>
-         <h2 className='  bg-sky-600 py-1 text-center text-white font-semibold'> <span className=''>Price: Tk</span> {tabs[0].price}</h2>
+         <h2 className='  py-1 text-center  text-red-600 font-semibold'> <span className=''>Price: Tk</span> {tabs[0].price}</h2>
         </div>
         <div className={activeTab === 1 ? 'block' : 'hidden'}>
-        <h2 className=' bg-cyan-500 py-1 text-center text-white font-semibold'> <span className=''>Price: Tk</span> {tabs[1].price}</h2>
+        <h2 className='  py-1 text-center  text-teal-600 font-semibold'> <span className=''>Price: Tk</span> {tabs[1].price}</h2>
         </div>
         <div className={activeTab === 2 ? 'block' : 'hidden'}>
-        <h2 className='  bg-teal-600 py-1 text-center text-white font-semibold'> <span className=''>Price: Tk</span> {tabs[2].price}</h2>
+        <h2 className='  py-1 text-center   text-sky-800 font-semibold'> <span className=''>Price: Tk</span> {tabs[2].price}</h2>
         </div>
 </div>
-      <div className="flex justify-center  text-sm space-x-1 md:space-x-4 md:py-2 md:border-2 ">
+      <div className="flex justify-center  text-base space-x-1 md:space-x-2 md:py-2 md:border-2 ">
         <button
           className={`${
-            activeTab === 0 ? 'bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white' : 'bg-gray-200 text-gray-800'
+            activeTab === 0 ? ' bg-red-600 text-white font-semibold ' : 'bg-gray-200 hover:bg-red-500 text-black font-semibold '
           } px-4 py-2 rounded focus:outline-none`}
           onClick={() => handleTabClick(0)}
         >
@@ -41,7 +41,7 @@ const TabComponent = () => {
         </button>
         <button
           className={`${
-            activeTab === 1 ? 'bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white' : 'bg-gray-200 text-gray-800'
+            activeTab === 1 ? '  bg-teal-600 text-white font-semibold ' : 'bg-gray-200 hover:bg-teal-500  text-black font-semibold '
           } px-4 py-2 rounded focus:outline-none`}
           onClick={() => handleTabClick(1)}
         >
@@ -49,14 +49,14 @@ const TabComponent = () => {
         </button>
         <button
           className={`${
-            activeTab === 2 ? 'bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white' : 'bg-gray-200 text-gray-800'
+            activeTab === 2 ? ' bg-sky-600 text-white font-semibold ' : 'bg-gray-300 hover:bg-sky-500 text-black font-semibold '
           } px-4 py-2 rounded focus:outline-none`}
           onClick={() => handleTabClick(2)}
         >
           {tabs[2].title}
         </button>
       </div>
- <div className='  mx-1 md:mx-20 px-1 md:px-6 py-2 shadow-md'>
+ <div className='  mx-1 md:mx-4 px-1 py-2 shadow-md'>
       <div className="mt-4 ">
         <div className={activeTab === 0 ? 'block' : 'hidden'}>
           <Card title={tabs[0].title} content={tabs[0].content} />

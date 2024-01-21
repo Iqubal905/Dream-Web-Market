@@ -40,12 +40,12 @@ const projects = [
     return (
         <div>
           <div className=' text-center py-2 md:py-8 mt-12 '>
-            <span className=' bg-sky-950 text-white  px-4 py-2 font-bold rounded-md text-2xl'>Project</span>
+  
             <h2 className=' text-xl md:text-4xl text-slate-950 font-bold py-2 md:py-4'>Projects We Have Done Before</h2>
             <p className=' text-slate-700'>You May Check Our Previous Projects to Have An Idea About <br />
 The Quality Of Our Work</p>
           </div>
-             <div className="flex flex-wrap justify-center">
+             <div className="grid grid-cols-1 md:grid-cols-3 ">
       {projects.map((project, index) => (
         <ProjectCard key={index} {...project} />
       ))}
