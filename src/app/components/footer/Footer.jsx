@@ -10,7 +10,7 @@ const Footer = () => {
                <p className='  text-sm'>Dream Web Market is a leading global IT provider. Dream Web Market was started 
                 to provide software solutions, website development and consulting services to all.</p>     
             </div>
-            <div className=' flex  justify-end items-center '>
+            <div className=' flex   justify-center pt-4 md:pt-0 md:justify-end items-center '>
                 <div>
                 <h2 className='text-xl  mb-6   '><span className='border-b-2  border-red-500'>Serv</span><span className='border-b-2 border-b-blue-500'>ices</span></h2>
                 <ul className='text-sm'>
@@ -22,7 +22,7 @@ const Footer = () => {
             </div>
             <div className='flex justify-center items-center'>
                <div>
-               <h2 className='text-xl  mb-6   '><span className='border-b-2  border-red-500'>Li</span><span className='border-b-2 border-b-blue-500'>nk</span></h2>
+               <h2 className='text-xl  mb-6  pt-4 md:pt-0 '><span className='border-b-2  border-red-500'>Li</span><span className='border-b-2 border-b-blue-500'>nk</span></h2>
                 <ul className='text-sm '>
                     <li className='mb-2 transition-all duration-300 transform hover:translate-x-2'><Link to={'/'} href={"/"}>About</Link></li>
                     <li className='mb-2 transition-all duration-300 transform hover:translate-x-2'><Link to={'/'} href={"/"}>Portfolio</Link></li>
