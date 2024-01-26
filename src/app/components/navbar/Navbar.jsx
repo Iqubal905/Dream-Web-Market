@@ -34,7 +34,7 @@ const Navbar = () => {
                 <div className="flex gap-3 font-semibold items-center">
                     <div className="hidden md:flex gap-3">
                         <NavLinks link={{ title: "Login", href: "/login" }} className="hidden md:block bg-white px-2 rounded text-orange-600">Login</NavLinks>
-                        <NavLinks link={{ title: "Register", href: "/Register" }} href={"/"} className="hidden md:block bg-white px-2 rounded text-orange-600">Login</NavLinks>
+                        <NavLinks link={{ title: "Register", href: "/register" }} href={"/"} className="hidden md:block bg-white px-2 rounded text-orange-600">Login</NavLinks>
                     </div>
                     {/* small screen menu toggler */}
                     <Hamberger></Hamberger>
