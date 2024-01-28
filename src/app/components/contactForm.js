@@ -23,11 +23,11 @@ const ContactForm = () => {
 
   return (
     <div className="flex items-center justify-center ">
-      <div className=" p-8 rounded shadow-md max-w-md w-full transition-transform transform hover:scale-105">
+      <div className=" px-6 py-4 rounded shadow-md max-w-md w-full bg-white  ">
        
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
-            <label className="block  text-white text-sm font-bold mb-2" htmlFor="name">
+            <label className="block  text-black  text-base font-bold mb-1" htmlFor="name">
               Name:
             </label>
             <input
@@ -36,12 +36,12 @@ const ContactForm = () => {
               name="name"
               value={formState.name}
               onChange={handleChange}
-              className="w-full px-3 py-2 bg-black opacity-60  text-white border-b-2 border-blue-500 rounded focus:outline-none focus:border-blue-500"
+              className="w-full px-3 py-2 bg-gray-100  font-semibold  text-base  text-black border-b-2 border-blue-500 rounded focus:outline-none focus:border-blue-500"
               required
             />
           </div>
           <div className="mb-4">
-            <label className="block text-white text-sm font-bold mb-2" htmlFor="email">
+            <label className="block text-black  text-base font-bold mb-1" htmlFor="email">
               Email:
             </label>
             <input
@@ -50,12 +50,12 @@ const ContactForm = () => {
               name="email"
               value={formState.email}
               onChange={handleChange}
-              className="w-full px-3 py-2 border-b-2  bg-black opacity-60  text-white border-b-2 border-blue-500  rounded focus:outline-none focus:border-blue-500"
+              className="w-full px-3 py-2   bg-gray-100   font-semibold  text-base  text-black   border-b-2 border-blue-500  rounded focus:outline-none focus:border-blue-500"
               required
             />
           </div>
           <div className="mb-4">
-            <label className="block text-white text-sm font-bold mb-2" htmlFor="description">
+            <label className="block text-black  text-base font-bold mb-1" htmlFor="description">
               Description:
             </label>
             <textarea
@@ -63,7 +63,7 @@ const ContactForm = () => {
               name="description"
               value={formState.description}
               onChange={handleChange}
-              className="w-full px-3 py-2 border-b-2  bg-black opacity-60  text-white border-b-2 border-blue-500  rounded focus:outline-none focus:border-blue-500"
+              className="w-full px-3 py-2  bg-gray-100  font-semibold  text-base  text-black  border-b-2 border-blue-500  rounded focus:outline-none focus:border-blue-500"
               rows="4"
               required
             ></textarea>
