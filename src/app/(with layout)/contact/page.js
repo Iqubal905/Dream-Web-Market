@@ -20,7 +20,6 @@ export const metadata = {
     className="   h-screen  relative    bg-no-repeat  bg-right-bottom bg-cover"
     style={{
       backgroundImage: 'url("https://media.istockphoto.com/id/1688578381/photo/contact-us-telephone-envelope-letter-and-e-mail-symbols-on-wooden-round-in-row-on-table-with.webp?b=1&s=170667a&w=0&k=20&c=FaGQdXfMLV6SgHLLG70p41UkUocD0G7831VeLY1B0WI=")', // Replace with your actual image URL
-     
       backgroundAttachment: 'fixed', 
     }}
   >
