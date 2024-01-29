@@ -3,6 +3,7 @@ import "./navbar.css";
 import Menu from "./compo/Menu";
 import Hamberger from "./compo/Hamberger";
 import NavLinks from "../activeRoutes/NavLinks";
+import Image from "next/image";
 export let links = [
     {
         link: "/",
@@ -25,16 +26,14 @@ export let links = [
 const Navbar = () => {
     return (
         <>
-            <nav className="bg-gray-100/50 backdrop-blur-sm flex justify-between items-center h-14 px-3 md:px-16 lg:px-24 fixed top-0 w-full z-50">
+            <nav className="bg-gray-100/50 backdrop-blur-sm flex justify-between items-center h-14 px-3 md:px-16 lg:px-44 fixed top-0 w-full z-50">
                 {" "}
                 <Link
                     to={"/"}
                     href={"/"}
                     className="font-extrabold capitalize text-3xl"
                 >
-                    <span className="text-gray-900">D</span>
-                    <span className="text-red-500">W</span>
-                    <span className="text-blue-500">M</span>
+                    <Image height={120} width={180} src={"/../../icon.png"} alt="logo"></Image>
                 </Link>
                 <div className="flex gap-10">
                     <div className="md:flex gap-2 items-center justify-center font-semibold hidden">
