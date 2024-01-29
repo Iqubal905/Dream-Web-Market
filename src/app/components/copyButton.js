@@ -18,7 +18,7 @@ const CopyButton = ({ textToCopy }) => {
   return (
     <div>
       <button
-        className={`copy-button ${isCopied ? 'bg-green-500' : 'font-bold text-blue-400'}  border-b-2 border-blue-500  px-2 py-1 rounded`}
+        className={`copy-button ${isCopied ? 'text-blue-300' : ' text-blue-500'}  border-b-2  border-blue-500  px-2 py-1 rounded`}
         onClick={handleCopy}
       >
         {isCopied ? 'Copied!' : 'Copy'}
