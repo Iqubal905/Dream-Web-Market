@@ -11,8 +11,6 @@ const Menu = () => {
             {
                 links.map(ele => <SideNavlinks key={ele.link} link={{ title: ele.title, href: ele.link }} ></SideNavlinks>)
             }
-            <SideNavlinks link={{ href: "/login", title: "Login" }} href={"/"} onClick={toggleNav}>Login</SideNavlinks>
-            <SideNavlinks link={{ href: "/register", title: "Register" }} href={"/"} onClick={toggleNav}>Register</SideNavlinks>
         </div>
     );
 };
