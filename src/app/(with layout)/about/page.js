@@ -2,6 +2,9 @@ import teamMembers from '@/app/data/teamMembers';
 import Image from 'next/image';
 import React from 'react';
 import Cart from './Cart';
+import aboutPageData from '@/app/data/aboutPageData';
+import DesignCard from './DesignCard';
+import Link from 'next/link';
 
 
 export const metadata = {
@@ -11,33 +14,22 @@ export const metadata = {
   const AboutPage = () => {
     return (
         <div>
-       <div
-    className="   py-16 relative "
-    style={{
-      backgroundImage: 'url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")', // Replace with your actual image URL
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundAttachment: 'fixed', // This is the key property for fixing the background image
-     
-    }}
-  >
-      <div className=' absolute   py-16 z-0   top-0 left-0 right-0 bg-black  opacity-60  text-white'>
-
-      </div>
-      <div className=' absolute  z-20 right-0 left-0  top-11'>
-          <h2 className=' text-center text-3xl font-bold text-white  '>ABOUT</h2>
-          </div>
-      
-          </div>
-
-          <div className='pt-4'>
+     <div className='pt-4'>
  
-               <h2 className='font-bold text-4xl text-red-500  text-center py-6 '>Our <span className='text-blue-500'>Mission</span></h2>
-               <p className=' font-semibold text-lg py-4'>
+               <h2 className='font-bold text-4xl text-red-500  text-center '>About <span className='text-blue-500'>Us</span></h2>
+               <p className='text-center text-gray-500 py-4 '> At Dream Web Market, our mission is simple: turn your ideas into <br /> awesome websites. 
+               Whether you are</p>
+             <div className=' pt-2 flex justify-center'>
+             <Image src="/images/about-img.jpg" width={700} height={700} alt="Member Image" className=" rounded-full"/>
+             </div>
+               <p className=' font-semibold text-base text-left py-4'>
                At Dream Web Market, our mission is simple: turn your ideas into awesome websites. 
                Whether you are starting a business, expressing your creativity, or growing an enterprise,
-                we are here to make your online dreams come true. We blend creativity and the latest tech
-                 to create websites that stand out. Think of us as your digital partners, committed to
+              <br />  <span className='text-red-400   '>
+               we are here to make your online dreams come true. We blend creativity and the latest tech
+                 to create websites that stand out.
+               </span><br />
+                 Think of us as your digital partners, committed to
                   understanding and bringing your unique vision to life. Customer happiness is our priority, 
                   and we are not just a service; we are here to propel you to success in the digital world.
                 Dream big, dream online Dream Web Market is your ticket to a fantastic digital future
@@ -46,13 +38,32 @@ export const metadata = {
           </div>
             
 
-          <div className='py-4'>
+          <div className=' py-10'>
  
- <h2 className='font-bold text-4xl text-red-500   text-center py-6'>Our <span className='text-blue-500'>Team</span></h2>
-
-<div className='grid grid-cols-2 md:grid-cols-4 gap-4 pt-8 pb-8'>
+          <h2 className='font-bold text-4xl text-red-500  text-center '>Meet Our <span className='text-blue-500'>Team</span></h2>
+               <p className='text-center text-gray-500 py-4 '> At Dream Web Market, our mission is simple: turn your ideas into <br /> awesome websites. 
+               Whether you are</p>
+<div className='grid grid-cols-1 md:grid-cols-4 gap-4 pt-8 pb-8'>
 {
     teamMembers.map(member =><Cart key={member.id } members={member}></Cart> )
+}
+</div>
+
+</div>
+
+
+<div className=' py-10 text-center'>
+ 
+ <h2 className='font-bold text-4xl text-red-500  text-center  '>Meet Our <span className='text-blue-500'>Team</span></h2>
+      <p className='text-center text-gray-500 py-4 '> At Dream Web Market, our mission is simple: turn your ideas into <br /> awesome websites. 
+      Whether you are</p>
+
+<Link href={'/contact'} className='bg-blue-500 px-4 py-3 rounded-full text-center'> Apply</Link>
+
+
+<div className='grid grid-cols-1 md:grid-cols-4 gap-4 pt-8 pb-8'>
+{
+aboutPageData.map(data =><DesignCard key={data.id } data={data}></DesignCard> )
 }
 </div>
 
