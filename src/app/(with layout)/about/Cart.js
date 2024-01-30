@@ -5,7 +5,7 @@ const Cart = ({members}) => {
 const {img, name, action} = members
     return (
         
-        <div  className=" bg-white overflow-hidden shadow-lg transform transition-transform hover:scale-105">
+        <div  className=" bg-white overflow-hidden shadow-lg transform transition-transform hover:scale-105 duration-500">
      <div className=' flex justify-center '>
      <Image src={img} width={150} height={150} alt="Member Image" className=" rounded-full"/>
      </div>

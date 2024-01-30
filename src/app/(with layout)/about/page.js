@@ -38,7 +38,7 @@ export const metadata = {
           </div>
             
 
-          <div className=' py-10'>
+          <div className=' py-8'>
  
           <h2 className='font-bold text-4xl text-red-500  text-center '>Meet Our <span className='text-blue-500'>Team</span></h2>
                <p className='text-center text-gray-500 py-4 '> At Dream Web Market, our mission is simple: turn your ideas into <br /> awesome websites. 
@@ -52,13 +52,13 @@ export const metadata = {
 </div>
 
 
-<div className=' py-10 text-center'>
+<div className=' pb-4  text-center'>
  
- <h2 className='font-bold text-4xl text-red-500  text-center  '>Meet Our <span className='text-blue-500'>Team</span></h2>
-      <p className='text-center text-gray-500 py-4 '> At Dream Web Market, our mission is simple: turn your ideas into <br /> awesome websites. 
+ <h2 className='font-bold text-4xl  text-red-500  text-center  '>Join Our <span className='text-blue-500'>Team</span></h2>
+      <p className='text-center text-gray-500 py-4 mb-4'> At Dream Web Market, our mission is simple: turn your ideas into <br /> awesome websites. 
       Whether you are</p>
 
-<Link href={'/contact'} className='bg-blue-500 px-4 py-3 rounded-full text-center'> Apply</Link>
+<Link href={'/contact'} className='apply-button  text-center'> Apply</Link>
 
 
 <div className='grid grid-cols-1 md:grid-cols-4 gap-4 pt-8 pb-8'>
