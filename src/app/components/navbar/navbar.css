@@ -1,0 +1,15 @@
+.nav-ham1 {
+  transform: rotate(45deg) translate(0.5rem, 0.5rem);
+}
+.nav-ham2 {
+  transform: translateX(100rem);
+}
+.nav-ham3 {
+  transform: rotate(-45deg) translate(0.5rem, -0.5rem);
+}
+.nav-left-0 {
+  left: 0;
+}
+.nav-left-full {
+  left: 100%;
+}
