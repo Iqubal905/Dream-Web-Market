@@ -16,7 +16,7 @@ const CopyButton = ({ textToCopy }) => {
   };
   
   return (
-    <div>
+    <div className='justify-self-end'>
       <button
         className={`copy-button ${isCopied ? 'text-blue-300' : ' text-blue-500'}  border-b-2  border-blue-500  px-2 py-1 rounded`}
         onClick={handleCopy}
