@@ -3,9 +3,6 @@
 @tailwind utilities;
 
 
-
-
-
 /* CSS */
 .apply-button {
   --b: 3px;   /* border thickness */
@@ -55,7 +52,7 @@
 
 /* You can us custom class hare */
 ::-webkit-scrollbar-thumb {
-  background-color: gray;
+  background-color: rgb(111, 9, 255);
   border-radius: 7px;
   border: 4px solid white;
 }
@@ -71,7 +68,7 @@
 /* SUPPORT FOR FIREFOX */
 @supports (scrollbar-color: red blue) {
   * {
-    scrollbar-color: rgb(254, 210, 12) rgba(14, 186, 97, 0.485);
+    scrollbar-color: rgb(111, 9, 255) white;
     scrollbar-width: thin;
   }
 }
