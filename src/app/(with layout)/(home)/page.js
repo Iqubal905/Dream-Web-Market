@@ -4,6 +4,8 @@ import Pricing from "./homeCompo/Pricing";
 import Project from "./homeCompo/Project";
 import Welcome from "./homeCompo/Welcome";
 import Reviews from "./homeCompo/Reviews";
+import WebDesign from "./homeCompo/webDesign/WebDesign";
+import BrandCrub from "./homeCompo/brandCrub/BrandCrub";
 export const metadata = {
   title: "Dream Web Market | home",
   description:
@@ -14,6 +16,8 @@ const HomePage = () => {
     <div>
       <Welcome></Welcome>
       <Choose />
+      <WebDesign/>
+      <BrandCrub/>
       <Pricing />
       <Project />
       <Reviews></Reviews>

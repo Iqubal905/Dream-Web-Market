@@ -1,0 +1,27 @@
+
+h1{
+  font-size: 10vw;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-image: url(../../public/images/235.jpg); 
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+p{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
