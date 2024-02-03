@@ -18,7 +18,7 @@ export const metadata = {
          <div  className='w-4/5'>
      <div className='pt-4  '>
  
-               <h2 className='font-bold text-4xl text-red-500  text-center '>About <span className='text-blue-500'>Us</span></h2>
+               <h2 className='font-bold text-2xl md:text-4xl text-red-500  text-center '>About <span className='text-blue-500'>Us</span></h2>
                <p className='text-center text-gray-500 py-4 '> At Dream Web Market, our turn your ideas into <br /> awesome websites. 
                Whether</p>
              <div className=' pt-2 flex justify-center'>
@@ -46,7 +46,7 @@ export const metadata = {
           <div className=' py-8'>
  
           
-          <h2 className='font-bold text-4xl text-red-500  text-center '>Meet Our <span className='text-blue-500'>Team</span></h2>
+          <h2 className='font-bold text-2xl md:text-4xl text-red-500  text-center '>Meet Our <span className='text-blue-500'>Team</span></h2>
                <p className='text-center text-gray-500 py-4 '> At Dream Web Market, our turn your ideas into <br /> awesome websites. 
                Whether</p>
 <div className='grid grid-cols-1 md:grid-cols-4 gap-4 pt-8 pb-8'>
@@ -60,7 +60,7 @@ export const metadata = {
 
 <div className=' pb-4  text-center'>
  
- <h2 className='font-bold text-4xl  text-red-500  text-center  '>Join Our <span className='text-blue-500'>Team</span></h2>
+ <h2 className='font-bold text-2xl md:text-4xl  text-red-500  text-center  '>Join Our <span className='text-blue-500'>Team</span></h2>
  <p className='text-center text-gray-500 py-4  mb-2'> At Dream Web Market, our turn your ideas into <br /> awesome websites. 
                Whether</p>
 
@@ -82,7 +82,7 @@ aboutPageData.map(data =><DesignCard key={data.id } data={data}></DesignCard> )
        <div className='  flex justify-center  w-full  h-56'>
              <Image src="/images/about-img-2.jpg" width={1000} height={300} alt="Member Image" className="  rounded-lg"/>
              </div>
-           <div className=' flex justify-center items-center absolute   top-0 left-0  bottom-0 right-0 font-semibold text-3xl text-white'>
+           <div className=' flex justify-center items-center absolute   top-0 left-0  bottom-0 right-0 font-semibold text-2xl md:text-3xl text-white'>
            <div>
            <h2  className=' '>Start talking with us</h2>
             <Link href={"/"} className='bg-blue-500 px-5 py-2  capitalize rounded-full font-semibold text-lg text-white'>Contact us</Link>
