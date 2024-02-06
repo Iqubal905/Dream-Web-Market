@@ -29,10 +29,10 @@ const ProjectCard = ({ name, link, img }) => {
             height={100}
             priority
           /> */}
-          <img src={img} alt={name} className="w-full h-auto h-72 object-cover rounded bg-gray-200" />
-          <div className="absolute inset-0   flex items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-50">
+          <img src={img} alt={name} className="opacity-15 w-full  h-72 object-cover rounded bg-gray-200" />
+          <div className="absolute inset-0 h-72  flex items-center justify-center p-4 opacity-100 transition-opacity duration-300 bg-black bg-opacity-50">
             <div className="text-white text-center">
-              <h2>{name}.com</h2>
+              <h2>Upcoming...</h2>
             </div>
           </div>
         </div>
