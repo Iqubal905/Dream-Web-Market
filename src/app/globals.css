@@ -39,9 +39,20 @@
   color: #fff;
 }
 
+/* text for about page */
+.text-gradient {
+  background-image: linear-gradient(to right, hsl(357, 91%, 48%), #3b82f6);
+  -webkit-background-clip: text; /* Safari/Chrome */
+  color: transparent;
+}
+
+
+
+
 /* You can us custom class hare */
 ::-webkit-scrollbar {
   width: 18px;
+  height: 0px;
 }
 
 /* You can us custom class hare */

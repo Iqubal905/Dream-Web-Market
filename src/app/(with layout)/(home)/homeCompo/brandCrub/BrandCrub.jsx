@@ -13,7 +13,7 @@ const BrandCrub = () => {
         <p className="text-lg text-gray-500 pt-6">Our Expertise and Commitment to Your Success Sets Us Apart</p>
       </div>
       <section>
-        <div class="grid grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="box shadow-xl p-5">
             <div className="flex justify-center pt-16 "><Image src={icon1} className="h-[80px] w-[80px] bg-green-300 rounded-full p-3" alt="alt" /></div>
             <h1 className="text-3xl font-bold text-center text-gray-700 pt-6">Personalized Business Package</h1>

@@ -20,33 +20,38 @@ const ReviewSlide = () => {
             text: "Since launching the website, the company saw a 120% increase in their traffic and their reach has doubled since implementing the BrandCurb team's recommendations. Though the team ran into issues during the project they were able to solve all of them.",
         },
     ]
-    const [current, setCurent] = useState(data[0])
+
     const toggleReviews = (para) => {
+        let scrollDiv, divChild;
+        scrollDiv = document.getElementById("container-div");
         if (para == "left") {
-            let newId = current.id - 1;
-            let newData = data.find(ele => ele.id == newId);
-            if (!newData) return setCurent(data[data.length - 1]);
-            setCurent(newData);
+            console.log(scrollDiv.scrollLeft)
+            scrollDiv.scrollLeft -= Number(scrollDiv.clientWidth);
         } else {
-            let newId = current.id + 1;
-            let newData = data.find(ele => ele.id == newId);
-            if (!newData) return setCurent(data[0]);
-            setCurent(newData);
+            scrollDiv.scrollLeft += Number(scrollDiv.clientWidth);
         }
     }
     return (
-        <>
-            <div id="swipe" className="flex items-center relative w-full bg-gray-100 rounded py-6 px-10 ">
-                <div className="w-full flex-col text-justify p-1 h-44 flex items-center justify-center ">
-                    <p className="text-2xl font-semibold py-4">{current.name}</p>
+        <div className="col-span-5 lg:col-span-3 relative flex items-center">
+            <button id="next" onClick={() => toggleReviews("left")} className="absolute -left-2 bg-blue-500 font-extrabold text-xl z-10 px-3 py-2 text-white duration-100 active:scale-90 rounded">←</button>
+            <button id="prev" onClick={() => toggleReviews("right")} className="absolute -right-2 bg-blue-500 font-extrabold text-xl px-3 py-2 z-10 text-white duration-100 active:scale-90 rounded">→</button>
+         
+            <div id="container-div" className=' flex items-center relative overflow-x-hidden  scroll-smooth snap-x snap-mandatory'>
+                {
+                    data.map(ele => <div key={ele.id} id={ele.id} className="flex items-center snap-center relative w-full bg-gray-100 shrink-0 rounded py-6 px-10">
+                        <div className="w-full flex-col text-justify p-1 h-44 flex items-center justify-center ">
+                            <p className="text-2xl font-semibold py-4">{ele.name}</p>
 
-                    <p className="font-semibold text-gray-600 overflow-clip">{current.text}</p>
-                    <p className="capitalize text-sm text-gray-700 py-1">rating: 4.5</p>
-                </div>
-                <button id="next" onClick={() => toggleReviews("left")} className="absolute -left-2 bg-blue-500 font-extrabold text-xl px-3 py-2 text-white duration-100 active:scale-90 rounded">←</button>
-                <button id="prev" onClick={() => toggleReviews("right")} className="absolute -right-3 bg-blue-500 font-extrabold text-xl px-3 py-2 text-white duration-100 active:scale-90 rounded">→</button>
+                            <p className="font-semibold text-gray-600 overflow-clip">{ele.text}</p>
+                            <p className="capitalize text-sm text-gray-700 py-1">rating: 4.5</p>
+                        </div>
+
+                    </div>)
+                }
+
             </div>
-        </>
+
+        </div>
     )
 }
 
