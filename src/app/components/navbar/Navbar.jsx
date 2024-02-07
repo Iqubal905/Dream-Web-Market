@@ -4,6 +4,7 @@ import Menu from "./compo/Menu";
 import Hamberger from "./compo/Hamberger";
 import NavLinks from "../activeRoutes/NavLinks";
 import Image from "next/image";
+import icon from "./icon.png"
 export let links = [
     {
         link: "/",
@@ -33,7 +34,7 @@ const Navbar = () => {
                     href={"/"}
                     className="font-extrabold capitalize text-3xl"
                 >
-                    <Image height={120} width={180} src={"/../../icon.png"} alt="logo"></Image>
+                    <Image height={120} width={180} src={icon} alt="logo"></Image>
                 </Link>
                 <div className="flex gap-10">
                     <div className="md:flex gap-2 items-center justify-center font-semibold hidden">
