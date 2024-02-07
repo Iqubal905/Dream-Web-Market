@@ -22,8 +22,8 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex items-center justify-center ">
-      <div className=" px-6 py-4 rounded shadow-md max-w-md w-full bg-white  ">
+
+      <div className=" px-6 py-4 rounded w-full bg-white border">
        
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
@@ -61,10 +61,11 @@ const ContactForm = () => {
             <textarea
               id="description"
               name="description"
+            
               value={formState.description}
               onChange={handleChange}
               className="w-full px-3 py-2  bg-gray-100  font-semibold  text-base  text-black  border-b-2 border-blue-500  rounded focus:outline-none focus:border-blue-500"
-              rows="4"
+              rows="6"
               required
             ></textarea>
           </div>
@@ -76,7 +77,7 @@ const ContactForm = () => {
           </button>
         </form>
       </div>
-    </div>
+
   );
 };
 

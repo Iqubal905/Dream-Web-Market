@@ -13,9 +13,9 @@ const teamMembers = [
     },
     {
         id:1,
-      name: "Alex Johnson",
+      name: "Alex ",
       img: "/images/member-1.jpg",
-      action: "Marketing Specialist"
+      action: "Web Developer"
     },
     {
         id:4,
