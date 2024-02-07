@@ -36,7 +36,7 @@ const ReviewSlide = () => {
             <button id="next" onClick={() => toggleReviews("left")} className="absolute -left-2 bg-blue-500 font-extrabold text-xl z-10 px-3 py-2 text-white duration-100 active:scale-90 rounded">←</button>
             <button id="prev" onClick={() => toggleReviews("right")} className="absolute -right-2 bg-blue-500 font-extrabold text-xl px-3 py-2 z-10 text-white duration-100 active:scale-90 rounded">→</button>
          
-            <div id="container-div" className=' flex items-center relative overflow-x-hidden  scroll-smooth snap-x snap-mandatory'>
+            <div id="container-div" className=' flex items-center relative md:overflow-x-hidden overflow-x-scroll   scroll-smooth snap-x snap-mandatory'>
                 {
                     data.map(ele => <div key={ele.id} id={ele.id} className="flex items-center snap-center relative w-full bg-gray-100 shrink-0 rounded py-6 px-10">
                         <div className="w-full flex-col text-justify p-1 h-44 flex items-center justify-center ">
