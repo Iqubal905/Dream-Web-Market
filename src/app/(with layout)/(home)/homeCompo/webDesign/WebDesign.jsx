@@ -1,10 +1,6 @@
-"use-client"
-
 import React from 'react';
 import Image from 'next/image'
 import devPic from '../../../../../../public/images/1618.jpg'
-import './webDsign.css'
-
 const WebDesign = () => {
   return (
 
