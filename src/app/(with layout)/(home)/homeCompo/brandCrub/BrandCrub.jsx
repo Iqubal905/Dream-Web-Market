@@ -1,5 +1,3 @@
-"use-client"
-
 import React from "react";
 import Image from "next/image";
 import icon1 from '../../../../../../public/images/people-outline.svg'
@@ -7,17 +5,17 @@ import icon2 from '../../../../../../public/images/iphone-x.svg'
 import icon3 from '../../../../../../public/images/unlock.svg'
 const BrandCrub = () => {
   return (
-    <div>
+    <div className="mt-12 md:mt-16 lg:mt-24">
       <div className="text-center pt-10 pb-10">
-        <h1 className="text-4xl text-gray-700 font-extrabold">Why Dream Web Market?</h1>
+        <h1 className="text-xl md:text-2xl font-semibold  ">Why Dream Web Market?</h1>
         <p className="text-lg text-gray-500 pt-6">Our Expertise and Commitment to Your Success Sets Us Apart</p>
       </div>
       <section>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="box shadow-xl p-5">
-            <div className="flex justify-center pt-16 "><Image src={icon1} className="h-[80px] w-[80px] bg-green-300 rounded-full p-3" alt="alt" /></div>
-            <h1 className="text-3xl font-bold text-center text-gray-700 pt-6">Personalized Business Package</h1>
-            <p className="text-center text-gray-500 leading-8 pt-6 pb-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+          <div className="px-5 py-2 shadow-xl ">
+            <div className="flex justify-center pt-12 "><Image src={icon1} className="h-[80px] w-[80px] bg-green-300 rounded-full p-3" alt="alt" /></div>
+            <h1 className="text-xl md:text-2xl font-semibold  text-center text-gray-700 pt-6">Personalized Business Package</h1>
+            <p className="text-center text-gray-500 leading-8 pt-6 pb-12">
               Choose from a wide range of web solutions that you need to ensure
               effective, efficient, and sustainable growth of your business.
               BrandCurb works on the smallest to largest detail of your
@@ -26,10 +24,10 @@ const BrandCrub = () => {
               sun!
             </p>
           </div>
-          <div className="box shadow-xl p-5">
-          <div className="flex justify-center pt-16 "><Image src={icon2} className="h-[80px] w-[80px] bg-red-300 rounded-full p-3" alt="alt" /></div>
-            <h1 className="text-3xl font-bold text-center text-gray-700 pt-6">Customized Approach</h1>
-            <p  className="text-center text-gray-500 leading-8 pt-6 pb-16">
+          <div className="px-5 py-2 shadow-xl ">
+            <div className="flex justify-center pt-12 "><Image src={icon2} className="h-[80px] w-[80px] bg-red-300 rounded-full p-3" alt="alt" /></div>
+            <h1 className="text-xl md:text-2xl font-semibold  text-center text-gray-700 pt-6">Customized Approach</h1>
+            <p className="text-center text-gray-500 leading-8 pt-6 pb-12">
               Clients from around the globe have raved and benefited from our
               responsive WordPress and WooCommerce websites. These SMEs are able
               to stand-up and even surpass bigger and heavier competition at a
@@ -38,10 +36,10 @@ const BrandCrub = () => {
               your company.
             </p>
           </div>
-          <div className="box shadow-xl p-5">
-          <div className="flex justify-center pt-16 "><Image src={icon3} className="h-[80px] w-[80px] bg-orange-300 rounded-full p-3" alt="alt" /></div>
-            <h1 className="text-3xl font-bold text-center text-gray-700 pt-6">Results-Driven Solutions</h1>
-            <p  className="text-center text-gray-500 leading-8 pt-6 pb-16">
+          <div className="px-5 py-2 shadow-xl ">
+            <div className="flex justify-center pt-12 "><Image src={icon3} className="h-[80px] w-[80px] bg-orange-300 rounded-full p-3" alt="alt" /></div>
+            <h1 className="text-xl md:text-2xl font-semibold text-center text-gray-700 pt-6">Results-Driven Solutions</h1>
+            <p className="text-center text-gray-500 leading-8 pt-6 pb-12">
               Clients from around the globe have raved and benefited from our
               responsive WordPress and WooCommerce websites. These SMEs are able
               to stand-up and even surpass bigger and heavier competition at a
