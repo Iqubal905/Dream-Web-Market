@@ -32,7 +32,7 @@ const Project = () => {
     <div>
       <div className=' text-center py-2 md:py-8 mt-12 '>
 
-        <h2 className=' text-xl md:text-4xl text-slate-950 font-bold py-2 md:py-4'>Projects We Have Done Before</h2>
+        <h2 className='text-xl md:text-2xl font-semibold text-center  my-4'>Projects We Have Done Before</h2>
         <p className=' text-slate-700'>You May Check Our Previous Projects to Have An Idea About <br />
           The Quality Of Our Work</p>
       </div>
