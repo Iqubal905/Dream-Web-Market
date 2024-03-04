@@ -11,7 +11,7 @@ const Welcome = () => {
                 <p className='text-gray-700'>Turning Dreams into Digital Realities! We craft sleek and powerful online solutions tailored just for you. Elevate your digital presence with us.</p>
                 <div className='flex my-2 sm:my-6 gap-3 flex-col sm:flex-row'>
                     <Link href={"/#price"} className='bg-red-500 px-5 py-2 capitalize rounded-md font-semibold text-lg text-white'>view Price</Link>
-                    <Link href={"/#price"} className='bg-blue-500 px-5 py-2 capitalize rounded-md font-semibold text-lg text-white'>Call Us now</Link>
+                    <Link href={"/contact"} className='bg-blue-500 px-5 py-2 capitalize rounded-md font-semibold text-lg text-white'>Call Us now</Link>
                 </div>
             </div>
             <div className='col-span-5 lg:col-span-2 '>

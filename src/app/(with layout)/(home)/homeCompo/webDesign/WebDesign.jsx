@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image'
 import devPic from '../../../../../../public/images/1618.jpg'
+import Link from 'next/link';
 const WebDesign = () => {
   return (
 
@@ -11,7 +12,7 @@ const WebDesign = () => {
           <p className='text-xl md:text-2xl font-semibold'>Did you know?</p>
           <p className='text-base pt-4'>38 percent of visitors will stop engaging with a website if the content or layout is unattractive</p>
           <p className='text-lg font-semibold pt-4 pb-4'>– Blue Corona</p>
-          <button className='bg-red-600 px-3 py-2 md:px-6 md:py-3 rounded-md text-white md:font-semibold'>Book A Free Consultation</button>
+          <Link href={"/contact"} className='bg-red-600 px-3 py-2 md:px-6 md:py-3 rounded-md text-white md:font-semibold'>Book A Free Consultation</Link>
         </div>
 
       </div>

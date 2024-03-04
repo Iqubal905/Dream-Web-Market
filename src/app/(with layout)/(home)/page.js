@@ -13,7 +13,7 @@ export const metadata = {
 };
 const HomePage = () => {
   return (
-    <div>
+    <div className="scroll-smooth">
       <Welcome></Welcome>
       <Choose />
       <WebDesign/>
